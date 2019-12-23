@@ -51,6 +51,13 @@ function kava_footer_menu() { ?>
 			'depth'            => 1,
 			'fallback_cb'      => '__return_empty_string',
 			'fallback_message' => esc_html__( 'Set footer menu', 'kava' ),
+			'items' => array(
+						'link_yelp',
+						'link_facebook',
+						'link_twitter',
+						'link_instagram',
+						'link_email',
+					),
 		) );
 
 		wp_nav_menu( $args );
@@ -80,7 +87,7 @@ function kava_get_social_list( $context, $type = 'icon' ) {
 
 	$container_class[] = sprintf( 'social-list--%s', sanitize_html_class( $type ) );
 
-	$args = apply_filters( 'kava-theme/social/list-args', array(
+	$args = apply_filters( 'kava-theme/menu/main-menu-args', array(
 		'theme_location'   => 'social',
 		'container'        => 'div',
 		'container_class'  => join( ' ', $container_class ),
@@ -115,3 +122,12 @@ function kava_set_nav_menu( $args ) {
 
 	printf( $format, $label, $url, $args['container_class'] );
 }
+
+//añadir clases al <li> del menu
+	function kava_set_nav_menu_clases($clases, $item, $args) {
+		if ($args -> theme_location == 'footer') {
+		$clases[] = 'opaciti';
+		}
+		return $clases;
+	}
+	add_filter('nav_menu_css_class', 'kava_set_nav_menu_clases', 1, 3);

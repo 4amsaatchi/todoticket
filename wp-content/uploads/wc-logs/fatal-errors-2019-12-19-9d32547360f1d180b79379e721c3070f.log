@@ -1,0 +1,6 @@
+2019-12-19T22:31:36+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 73728 bytes) in /var/www/html/todoticket/wp-content/plugins/elementor/includes/base/controls-stack.php on line 1787
+
+2019-12-19T22:34:31+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 69632 bytes) in /var/www/html/todoticket/wp-content/plugins/elementor/includes/base/controls-stack.php on line 612
+
+2019-12-19T22:35:07+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 73728 bytes) in /var/www/html/todoticket/wp-content/plugins/elementor/includes/base/controls-stack.php on line 1090
+

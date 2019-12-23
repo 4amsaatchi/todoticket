@@ -24,12 +24,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-  font-family: sans-serif;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 body {
   margin: 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   background-color: white; }
 
 article,
@@ -124,7 +125,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, monospace;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   font-size: 1em; }
 
 button,
@@ -212,13 +213,22 @@ html {
   font-size: 1rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
 
 p {
   margin: 0 0 1em; }
-
-dfn, cite, em, i {
-  font-style: italic; }
+i{
+  font-style: italic;
+}
+dfn, cite, em, {
+  font-style: italic;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+div, span, b, strong,{
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
 
 blockquote {
   font-size: 20px;
@@ -231,7 +241,7 @@ address {
   margin: 0 0 1.5em; }
 
 pre {
-  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   line-height: 1.6;
   overflow: auto;
   max-width: 100%;
@@ -246,7 +256,7 @@ pre {
   font-size: 1rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -3671,3 +3681,155 @@ html#ecwid_html body#ecwid_body {
       min-height: 40px; }
     html#ecwid_html body#ecwid_body .ec-size.ec-size--l .ec-wrapper .ec-store .form-control--medium .form-control__button {
       min-height: 46px; }
+
+
+/*stylos 4am saatchi*/
+
+
+
+
+.contenedor-menu{
+  padding: 0% 5% 0% 5%;
+}
+.row-menu {
+    display: flex;
+    padding: 20px 0;
+}
+.row-menu > .site-branding {
+    width: 15%;
+}
+.row-menu > #site-navigation {
+    width: 70%;
+}
+.row-menu > .socialheadermenu {
+    width: 15%;
+    display: flex;
+}
+.row-menu > #site-navigation > .main-navigation-inner {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.singlesocialheader.txtcenter > a > i {
+    width: 1em;
+    height: 1em;
+}
+.singlesocialheader.txtcenter > a {
+    background: #333135;
+    margin: 0 5px;
+    border-radius: 50px;
+    display: block;
+    color: #fff;
+}
+.singlesocialheader.txtcenter > a:hover {
+    background: #eabe41;
+    color: #fff;
+}
+.singlesocialheader.txtcenter > a > i {
+    width: 25px;
+    height: 25px;
+    display: block;
+    padding: 6px 0px 0px 6px;
+}
+.main-navigation-inner {
+    padding-top: 5px;
+}
+.main-navigation a:hover, .main-navigation .current_page_item>a, .main-navigation .current-menu-item>a, .main-navigation .current_page_ancestor>a, .main-navigation .current-menu-ancestor>a {
+    color: #eabe41 !important;
+}
+.main-navigation a, .menu-item-has-children:before {
+    color: #333135 !important;
+    font-weight: 500;
+}
+.socialheadermenu {
+    padding-top: 5px;
+}
+
+/* Foooter social links*/
+ul#social-list-1 > li:before {
+    display: none;
+}
+ul#social-list-1 span{
+  display: none;
+}
+.socialheadermenu.footer > .singlesocialheader.txtcenter {
+    display: inline-block;
+}
+.footeri {
+  padding: 4px 0px 0px 0px !important;
+}
+.rowfoo {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.rowfoo a {
+    color: #333135;
+    font-size: 16px;
+}
+.rowfoo a:hover {
+    color: #eabe41;
+}
+.col-gen-4 {
+    width: 33.33%;
+}
+.col-gen-4.medio {
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: #eeeeee;
+    padding: 0 80px;
+}
+.col-gen-12.terminos{
+  margin: 40px auto;
+}
+.col-gen-12.terminos a {
+    font-size: 12px;
+}
+.callcenter {
+    color: white;
+    display: block;
+    margin-top: 1em;
+    padding: 2em 0px;
+}
+.callcenter {
+    color: #333135;
+    display: block;
+    padding: 2em 0;
+    margin-top: 1em;
+    width: 200px;
+    margin: 0 auto;
+}
+.callcenter img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    float: left;
+}
+.footer-logo img {
+    max-width: 100%;
+    width: 175px;
+}
+.callcenter span {
+    font-size: 1em;
+    letter-spacing: 3.5px;
+}
+.callcenter h3 {
+    margin: 0;
+}
+.callcenter > p {
+    display: none;
+}
+h3.font-bold > a {
+    font-size: 28px;
+    color: #eabe41;
+}
+h3.font-bold > a:hover {
+    color: #333135;
+}
+.site-footer__wrap.container{
+  margin-top: 30px;
+}
+.col-gen-4.medio p {
+    margin-bottom: 25px;
+}

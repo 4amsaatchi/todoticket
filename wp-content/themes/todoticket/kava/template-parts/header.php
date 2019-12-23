@@ -8,15 +8,28 @@
  */
 ?>
 
-<?php get_template_part( 'template-parts/top-panel' ); ?>
 
-<div <?php kava_header_class(); ?>>
+<div class="contenedor-menu">
 	<?php do_action( 'kava-theme/header/before' ); ?>
-	<div class="space-between-content">
+	<div class="row-menu">
 		<div <?php kava_site_branding_class(); ?>>
 			<?php kava_header_logo(); ?>
 		</div>
 		<?php kava_main_menu(); ?>
+		<?php if ( has_nav_menu( 'social' ) ) :?>
+			<div class="socialheadermenu">
+				<?php $items = wp_get_nav_menu_items(61);
+				foreach ($items as $item) :?>
+					<div class="singlesocialheader txtcenter">
+						<a href="<?= $item->url ?>" target="_blank">
+							<i class="fa <?= $item->classes[0] ?>"></i>							
+						</a>
+					</div>
+				<?php 					
+				endforeach;	?>
+			</div>
+			<?php
+		endif;
+		?>
 	</div>
-	<?php do_action( 'kava-theme/header/after' ); ?>
 </div>

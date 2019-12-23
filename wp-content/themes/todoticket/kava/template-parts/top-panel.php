@@ -12,7 +12,7 @@ if ( ! kava_is_top_panel_visible() ) {
 	return;
 } ?>
 
-<div class="top-panel container">
+<!-- <div class="top-panel container">
 	<div class="space-between-content">
 		<div class="top-panel-content__left">
 				<?php do_action( 'kava-theme/top-panel/elements-left' ); ?>
@@ -23,4 +23,4 @@ if ( ! kava_is_top_panel_visible() ) {
 				<?php do_action( 'kava-theme/top-panel/elements-right' ); ?>
 		</div>
 	</div>
-</div>
+</div> -->

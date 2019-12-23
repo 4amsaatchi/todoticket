@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /todoticket/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /todoticket/index.php [L]
+</IfModule>
+SetEnv MAGICK_THREAD_LIMIT 1
+<FilesMatch "(async-upload\.php|wp-cron\.php|xmlrpc\.php)$">
+Satisfy Any
+Order allow,deny
+Allow from all
+Deny from none
+</FilesMatch>
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
