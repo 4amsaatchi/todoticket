@@ -18,6 +18,9 @@ function kava_main_menu() {
 	?>
 	<nav id="site-navigation" class="<?php echo join( ' ', $classes ); ?>" role="navigation">
 		<div class="main-navigation-inner">
+			<div class="mobile-logo">
+				<?php kava_header_logo(); ?>
+			</div>
 		<?php
 			$args = apply_filters( 'kava-theme/menu/main-menu-args', array(
 				'theme_location'   => 'main',
@@ -28,6 +31,21 @@ function kava_main_menu() {
 			) );
 
 			wp_nav_menu( $args );
+		?>
+		<?php if ( has_nav_menu( 'social' ) ) :?>
+			<div class="socialheadermenu inner-mobile">
+				<?php $items = wp_get_nav_menu_items(61);
+				foreach ($items as $item) :?>
+					<div class="singlesocialheader txtcenter">
+						<a href="<?= $item->url ?>" target="_blank">
+							<i class="fa <?= $item->classes[0] ?>"></i>							
+						</a>
+					</div>
+				<?php 					
+				endforeach;	?>
+			</div>
+			<?php
+		endif;
 		?>
 		</div>
 	</nav><!-- #site-navigation -->

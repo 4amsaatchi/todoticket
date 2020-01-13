@@ -382,8 +382,8 @@ class Jet_Woo_Builder_Archive_Add_To_Cart extends Widget_Base {
 				array(
 					'button',
 					'product_type_' . $product->get_type(),
-					$product->is_purchasable() && $product->is_in_stock() ? 'add_to_cart_button' : '',
-					$product->supports( 'ajax_add_to_cart' ) && $product->is_purchasable() && $product->is_in_stock() && $ajax_add_to_cart_enabled ? 'ajax_add_to_cart' : '',
+					$product->is_purchasable() && $product->is_in_stock() ? 'add_to_cart_button tacos' : '',
+					$product->supports( 'ajax_add_to_cart tacos' ) && $product->is_purchasable() && $product->is_in_stock() && $ajax_add_to_cart_enabled ? 'ajax_add_to_cart' : '',
 				)
 			)
 		);
