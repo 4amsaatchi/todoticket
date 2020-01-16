@@ -21,15 +21,16 @@
 
 <?php wp_footer(); ?>
 <script>
-jQuery(document).ready(function(){
-	jQuery( "a.button.product_type_simple" ).append( "<p>Ver más</p>" );
-	jQuery( "a.button.product_type_variable.add_to_cart_button" ).append( "<p>Ver más</p>" );
-	jQuery( "a#botton-cotizacion" ).click(function( event ) {
-		event.preventDefault();
-		jQuery("html, body").animate({ scrollTop: jQuery(jQuery(this).attr("href")).scrollTop().top }, 500);
-		console.log("clicki");
-	});
-});
+var $target = jQuery(this.hash), target = this.hash;
+      if (target) {
+        var targetOffset = $target.offset().top - 192;
+        jQuery(this).click(function(event) {
+          event.preventDefault();
+          jQuery(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
+            location.hash = targetOffset;
+          });
+        });
+    }
 </script>
 </body>
 </html>

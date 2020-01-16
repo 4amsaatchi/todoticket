@@ -23,6 +23,15 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+@font-face {
+    font-family: 'helveticaneueregular';
+    src: url('/todoticket/wp-content/themes/todoticket/kava/fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('/todoticket/wp-content/themes/todoticket/kava/fonts/helveticaneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
   -webkit-text-size-adjust: 100%;
@@ -3756,11 +3765,9 @@ a#toTop:hover {
 .row-menu > .site-branding {
     width: 15%;
 }
-.row-menu > #site-navigation {
-    width: 100%;
-}
+
 .row-menu > .socialheadermenu {
-    width: 15%;
+    width: auto;
     display: flex;
 }
 .row-menu > #site-navigation > .main-navigation-inner {
@@ -3774,11 +3781,27 @@ a#toTop:hover {
     height: 1em;
 }
 .singlesocialheader.txtcenter > a {
-    background: #eabe41;
     margin: 0 5px;
     border-radius: 50px;
-    display: block;
+    display: flex;
     color: #fff !important;
+}
+.socialheadermenu.footer {
+    display: block;
+    margin: 0 auto;
+}
+.rowfoo .socialheadermenu.footer a {
+    display: flex;
+    padding: 0px !important;
+    border-radius: 50% !important;
+    width: 40px;
+    height: 40px;
+}
+.logofoot img {
+    width: 150px;
+}
+h5.enlaces {
+    color: #eabe41;
 }
 .jet-woo-products .jet-woo-product-button .button{
 	background-color: #eabe41;
@@ -3878,9 +3901,6 @@ a.button.product_type_variable.add_to_cart_button {
     display: block !important;
     width: 42%;
     padding: 5px 20px !important;
-}
-a.button.product_type_variable.add_to_cart_button > span.button-text{
-	display: none;
 }
 a.button.product_type_variable.add_to_cart_button > p{
 	color: #ffffff !important;
@@ -4000,6 +4020,7 @@ ul#social-list-1 span{
 }
 footer .site-footer__wrap.container {
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 .col-gen-12.terminos a {
     font-size: 12px;
@@ -4048,9 +4069,10 @@ h3.font-bold > a:hover {
 }
 .site-footer__wrap.container{
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 .col-gen-4.medio p {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .jet-woo-products .jet-woo-product-price del .amount {
     color: #a3a3a3;
@@ -4069,9 +4091,9 @@ h3.font-bold > a:hover {
     pointer-events: none !important;
 
 }
-a.button.product_type_simple > span.button-text {
+/*a.button.product_type_simple > span.button-text {
     display: none !important;
-}
+}*/
 .tawcvs-swatches {
     display: flex;
 }
@@ -4089,12 +4111,190 @@ a.reset_variations {
     display: none !important;
     visibility: hidden !important;
 }
+.post-author-bio {
+    display: none !important;
+}
+.post-navigation .nav-text {
+    color: #eabe41;
+}
+.post-navigation .nav-text:hover {
+    color: #9a999e !important;
+}
+.post-navigation .nav-links a:hover .post-title, .post-navigation .nav-links a:hover .nav-text {
+    color: #9a999e !important;
+}
+.post-navigation .nav-links a:hover .post-title, .post-navigation .nav-links a:hover .nav-text {
+    color: #9a999e !important;
+}
+.comment-form .submit:hover, .wpcf7-submit:hover, .post-password-form label + input:hover {
+    color: #ffffff;
+    background-color: rgb(234, 190, 65) !important;
+}
+.comment-form .submit, .wpcf7-submit, .post-password-form label + input {
+    background-color: #eabe41 !important;
+}
+form#commentform a, a:hover {
+    color: #eabe41;
+}
+.post.type-post.status-publish span.cat-links {
+    display: none !important;
+}
+.post.type-post.status-publish span.byline, a.comments-link {
+    display: none !important;
+}
+.post.type-post.status-publish.format-standarda, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+    color: #eabe41;
+}
+.correo-electronico a {
+    color: #eabe41;
+}
+.correo-electronico a:hover {
+    color: #20232c !important;
+}
+.singlesocialheader.txtcenter > a > img {
+    width: 28px;
+    height: 28px;
+}
+button.mobile-menu-toggle-button i.mobile-menu-close.fa.fa-bars {
+    font-size: 20px;
+}
+button.mobile-menu-toggle-button i.mobile-menu-open.fa.fa-times {
+    font-size: 20px;
+}
+.texto-blog {
+    margin-bottom: 0px !important;
+}
+div#mainNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+    min-height: 100% !important;
+    background: rgba(0,0,0,0.88);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    animation-name: backgroundcolor;
+    -webkit-animation-name: backgroundcolor; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    z-index: 999;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: rgba(0,0,0,0.7);}
+  to {background-color: rgba(0, 0, 0, 0.55);}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: rgba(0,0,0,0.7);}
+  to {background-color: rgba(0, 0, 0, 0.55);}
+}
+button#navToggle {
+    position: absolute;
+    z-index: 9999;
+}
+form#searchform {
+    margin: 0 auto;
+}
+.collapsed{
+  display: none !important;
+}
+button.navbar-toggle.style-1 {
+    background: transparent;
+    padding: 10px;
+    font-size: 18px;
+}
+form#searchform todoticket {
+    margin: 0 auto;
+}
+.inputbuscar > input#s {
+    background: transparent;
+    border-width: 0 0 1px 0;
+    border-radius: 0px !important;
+    color: #fff !important;
+}
+button#searchsubmit {
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 0;
+    border-width: 0 0 1px 0;
+}
 @media only screen and (min-width: 768px) {
+  .row-menu > #site-navigation {
+    width: 70%;
+}
+.inputbuscar {
+    min-width: 400px !important;
+}
+	.formulario-web {
+    min-height: 600px !important;
+}
 	.socialheadermenu.inner-mobile, .mobile-logo {
 	    display: none;
 	}
+	.jet-woo-products__item.col-desk-3.col-tab-3.jet-woo-builder-product {
+	    min-height: 425px !important;
+	}
+	.jet-woo-products__item.col-desk-3.col-tab-2.jet-woo-builder-product {
+	    min-height: 425px !important;
+	}
+	.jet-woo-products__item.col-desk-4.col-tab-3.col-mob-1.jet-woo-builder-product.slick-slide {
+	    min-height: 425px !important;
+	}
+  .jet-woo-products__item.col-desk-4.col-tab-3.jet-woo-builder-product.slick-slide.slick-current.slick-active {
+    height: 425px !important;
+  }
+	.jet-woo-products .jet-woo-product-price {
+	    margin: 0 auto !important;
+	    position: absolute;
+	    bottom: 2% !important;
+	    left: 25%;
+	    right: 25%;
+	}
+	.jet-woo-products__item.col-desk-3.col-tab-2.jet-woo-builder-product .jet-woo-product-title {
+		margin-bottom: 34px !important;
+	}
 }
 @media only screen and (max-width: 768px) {
+  .buscador.search-web {
+    width: 50%;
+    margin-right: 30px !important;
+}
+button#navToggle {
+    float: right;
+    position: relative;
+    margin-right: 15px;
+    padding: 10px 10px !important;
+}
+  .row-menu > #site-navigation {
+    width: 100%;
+}
+
+	.elementor-widget-container > .jet-tabs {
+	border-width: 1px 0px 0px 0px !important;
+	}
+	.jet-tabs__control-wrapper > .jet-tabs__control {
+	    border-style: solid;
+	    border-width: 0px 0px 1px 1px !important;
+	    border-color: #eabe41 !important;
+	}
+	nav.navigation.post-navigation > .nav-links > div {
+    width: 50%;
+    display: inline-grid;
+}
+.jet-woo-products__item {
+    min-height: 475px !important;
+}
 	a.button.product_type_variable.add_to_cart_button {
     width: 60%;
 }

@@ -13,7 +13,7 @@ the_post_navigation( array(
 		<i class="fa fa-chevron-left" aria-hidden="true"></i>
 		<div class="nav-text">%1$s</div>
 		<h4 class="post-title">%2$s</h4>',
-		esc_html__( 'Previous', 'kava' ),
+		esc_html__( 'Anterior', 'kava' ),
 		'%title'
 	),
 	'next_text' => sprintf( '
@@ -21,7 +21,7 @@ the_post_navigation( array(
 		<i class="fa fa-chevron-right" aria-hidden="true"></i>
 		<div class="nav-text">%1$s</div>
 		<h4 class="post-title">%2$s</h4>',
-		esc_html__( 'Next', 'kava' ),
+		esc_html__( 'Siguiente', 'kava' ),
 		'%title'
 	),
 ) );

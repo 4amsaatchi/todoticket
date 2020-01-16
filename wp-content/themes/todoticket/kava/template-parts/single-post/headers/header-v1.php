@@ -18,7 +18,7 @@
 				'prefix'  => __( 'In', 'kava' ),
 			) );
 			kava_posted_on( array(
-				'prefix'  => __( 'Posted', 'kava' ),
+				'prefix'  => __( 'Publicado:', 'kava' ),
 			) );
 			kava_post_comments( array(
 				'postfix' => __( 'Comment(s)', 'kava' ),

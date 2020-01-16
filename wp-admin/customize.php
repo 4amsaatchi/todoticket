@@ -188,7 +188,7 @@ do_action( 'customize_controls_print_scripts' );
 				<span class="preview"><?php _e( 'Preview' ); ?></span>
 			</button>
 			<a class="customize-controls-close" href="<?php echo esc_url( $wp_customize->get_return_url() ); ?>">
-				<span class="screen-reader-text"><?php _e( 'Close the Customizer and go back to the previous page' ); ?></span>
+				<span class="screen-reader-text"><?php _e( 'Anterior' ); ?></span>
 			</a>
 		</div>
 

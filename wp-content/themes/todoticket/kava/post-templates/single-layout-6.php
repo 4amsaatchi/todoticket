@@ -21,7 +21,7 @@ get_header();
 					<div id="author-block" class="col-xs-12 col-md-3"><?php
 						get_template_part( 'template-parts/single-post/author-bio' );
 						kava_posted_on( array(
-							'prefix'  => __( 'Posted', 'kava' ),
+							'prefix'  => __( 'Publicado', 'kava' ),
 							'before' => '<div class="posted-on">',
 							'after'  => '</div>',
 						) );

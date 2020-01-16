@@ -38,7 +38,7 @@ function kava_main_menu() {
 				foreach ($items as $item) :?>
 					<div class="singlesocialheader txtcenter">
 						<a href="<?= $item->url ?>" target="_blank">
-							<i class="fa <?= $item->classes[0] ?>"></i>							
+							<img class="logos-inner" src="<?php echo get_home_url(); ?>/wp-content/uploads/2020/01/<?= $item->classes[0] ?>-ico.png" alt="<?= $item->classes[0] ?>">
 						</a>
 					</div>
 				<?php 					

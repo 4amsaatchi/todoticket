@@ -9,7 +9,7 @@
 	<div class="rowfoo">
 		<div class="col-gen-4">
 			<div class="logofoot">
-				<?php kava_header_logo(); ?>
+				<img src="<?php echo get_home_url(); ?>/wp-content/uploads/2020/01/Logo-blanco.png" alt="Todoticket">
 			</div>
 			<?php dynamic_sidebar( 'sidebar-1' ); ?>	
 		</div>
@@ -24,7 +24,8 @@
 					foreach ($items as $item) :?>
 						<div class="singlesocialheader txtcenter">
 							<a href="<?= $item->url ?>" target="_blank">
-								<i class="fa <?= $item->classes[0] ?> footeri"></i>							
+								<!-- <i class="fa <?= $item->classes[0] ?> footeri"></i> -->
+								<img src="<?php echo get_home_url(); ?>/wp-content/uploads/2020/01/<?= $item->classes[0] ?>-ico.png" alt="<?= $item->classes[0] ?>">
 							</a>
 						</div>
 					<?php 					
@@ -33,11 +34,6 @@
 				<?php
 			endif;
 			?>
-		</div>
-	</div>
-	<div class="rowfoo">
-		<div class="col-gen-12 terminos">
-			<?php dynamic_sidebar( 'sidebar-3' ); ?>
 		</div>
 	</div>
 </div>
