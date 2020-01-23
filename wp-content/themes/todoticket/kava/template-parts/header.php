@@ -69,7 +69,7 @@ jQuery(".navbar-toggle").click(function(){
 </div>
 <script>
 jQuery(document).ready(function($){
-	if ($(window).width() <= 767) {
+	if ($(window).width() <= 769) {
 	    $(".menu-item-has-children").append("<div class='open-menu-link open itemvisible'>+</div>");
 	    $('.menu-item-has-children').append("<div class='open-menu-link close'>-</div>");
 	

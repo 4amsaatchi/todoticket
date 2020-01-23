@@ -628,3 +628,14 @@ function kava_sidebar_registration() {
 
 }
 add_action( 'widgets_init', 'kava_sidebar_registration' );
+
+/**
+ * Halt the main query in the case of an empty search 
+ */
+add_filter( 'posts_search', function( $search, \WP_Query $q )
+{
+    if( ! is_admin() && empty( $search ) && $q->is_search() && $q->is_main_query() && $q->is_search('&nbsp;') && $q->is_main_query('&nbsp;'))
+        $search .=" AND 0=1 ";
+
+    return $search;
+}, 10, 2 );

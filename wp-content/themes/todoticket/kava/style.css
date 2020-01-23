@@ -3794,8 +3794,8 @@ a#toTop:hover {
     display: flex;
     padding: 0px !important;
     border-radius: 50% !important;
-    width: 40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
 }
 .logofoot img {
     width: 150px;
@@ -4266,6 +4266,9 @@ button#searchsubmit {
 	}
 }
 @media only screen and (max-width: 768px) {
+  a.productosolo > img {
+    width: 100% !important;
+}
   .buscador.search-web {
     width: 50%;
     margin-right: 30px !important;
@@ -4393,4 +4396,215 @@ ul.sub-menu > li > a{
 }
 .jet-woo-builder .product_meta .posted_in a {
     color: #eabe41 !important;
+}
+
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+.slideshow-container > .mySliders:nth-child(2){
+  display: none;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgb(254, 184, 36);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 10px 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #648251;
+}
+
+/* Fading animation */
+.fader {
+  -webkit-animation-name: fader;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fader;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fader {
+  from {opacity: .4;} 
+  to {opacity: 1;}
+}
+
+@keyframes fader {
+  from {opacity: .4;} 
+  to {opacity: 1;}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+p.title-product {
+    position: absolute;
+    top: 0;
+}
+a.productosolo > img{
+  height: 100%;
+}
+.banner-button {
+    position: absolute;
+    top: 33%;
+    left: 1%;
+    right: 1%;
+    background: #eabe41 !important;
+    text-decoration: none !important;
+    min-width: 150px !important;
+    width: 150px;
+    border-radius: 30px !important;
+    font-family: helvetica;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: rgba(0,0,0,0);
+    padding: 8px;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+.banner-button:hover {
+    color: #fff;
+    background-color: #9a999e !important;
+}
+
+
+.tax-product_cat .categorias-catalogo {
+    display: none !important;
+}
+.prev, .next {
+    position: relative;
+    padding: 15px;
+}
+a.jet-filters-pagination__link {
+    color: #20232c !important;
+}
+a.jet-filters-pagination__link:hover {
+    color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.jet-woo-products-list .jet-woo-product-thumbnail img {
+    cursor: pointer;
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)  {
+	ul#main-menu {
+	    width: 129%;
+	}
+	.main-navigation li.menu-item-has-children:before{
+		display: none;
+	}
+	.open-menu-link.open {
+	    right: -8%;
+	    top: 39%;
+	}
+	.open-menu-link.close {
+	    top: 33%;
+	    right: 0%;
+	}
+	header#masthead {
+	    margin-bottom: 150px;
+	}
+	.page-id-11 header#masthead {
+	    margin-bottom: 150px;
+	}
+	.elementor-11 .elementor-element.elementor-element-026b9d5{
+		margin-top: 0px !important;
+	}
+	.jet-woo-products__item.col-desk-3.col-tab-3.jet-woo-builder-product {
+	    min-height: 320px !important;
+	}
+	.titulo-soluciones h2.elementor-heading-title.elementor-size-default {
+	    min-height: 42px !important;
+	}
+	.jet-woo-products__item.col-desk-3.col-tab-2.jet-woo-builder-product {
+	    min-height: 320px !important;
+	}
+	.jet-woo-products__item.col-desk-4.col-tab-3.col-mob-1.jet-woo-builder-product.slick-slide {
+	    min-height: 320px !important;
+	}
+	.socialheadermenu.fuerade-menu {
+	    visibility: hidden;
+	}
+	a.button.product_type_simple {
+	    width: 70%;
+	}
+	a.button.product_type_variable.add_to_cart_button {
+	    width: 70%;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.jet-woo-products__item.col-desk-3.col-tab-3.jet-woo-builder-product {
+	    min-height: 385px !important;
+	}
+	a.button.product_type_simple {
+	    width: 70%;
+	}
+	a.button.product_type_variable.add_to_cart_button {
+	    width: 70%;
+	}
 }
